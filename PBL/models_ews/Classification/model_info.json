@@ -1,0 +1,42 @@
+{
+    "model_version": "1.0",
+    "num_classes": 3,
+    "feature_columns": [
+        "Bulan",
+        "Hari",
+        "Hari_Minggu",
+        "Quarter",
+        "Is_Weekend",
+        "Is_Akhir_Bulan",
+        "Is_Awal_Bulan",
+        "Hari_Dari_Awal_Bulan",
+        "Total_Transaksi",
+        "Rata_Nominal",
+        "Frekuensi_Per_Hari",
+        "Durasi_Aktif_Hari",
+        "Rata_Interval_Hari",
+        "Jumlah_Terlambat",
+        "Persentase_Terlambat",
+        "Is_TopUp",
+        "Is_QRIS",
+        "Is_Transfer",
+        "Prop_TopUp",
+        "Prop_QRIS",
+        "Prop_Transfer",
+        "Aktivitas_Bulan_Ini",
+        "Aktivitas_Quarter_Ini",
+        "Nominal_Transaksi",
+        "Warga_ID"
+    ],
+    "class_mapping": {
+        "Mendekati_Deadline": 0,
+        "Tepat_Waktu": 1,
+        "Terlambat": 2
+    },
+    "base_models": [
+        "xgb_classifier",
+        "cat_classifier",
+        "lgb_classifier"
+    ],
+    "meta_model": "meta_classifier"
+}

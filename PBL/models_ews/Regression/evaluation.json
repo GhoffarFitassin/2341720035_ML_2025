@@ -1,0 +1,71 @@
+{
+    "comparison": [
+        {
+            "Model": "XGBoost",
+            "MAE": 0.029060336868575034,
+            "RMSE": 0.0607701706424764,
+            "R2": 0.9999853695459177
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 0.034515300712583366,
+            "RMSE": 0.06271835002567791,
+            "R2": 0.9999844164591832
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 0.05402144977924998,
+            "RMSE": 0.08607601777303019,
+            "R2": 0.9999706477615498
+        },
+        {
+            "Model": "Stacking (Meta)",
+            "MAE": 0.015010150872858388,
+            "RMSE": 0.047404535904683034,
+            "R2": 0.9999910974034566
+        }
+    ],
+    "best_model": "Stacking (Meta)",
+    "feature_importance_top10": [
+        {
+            "Feature": "Is_Awal_Bulan",
+            "Importance": 0.3945692777633667
+        },
+        {
+            "Feature": "Hari_Dari_Awal_Bulan",
+            "Importance": 0.22365108132362366
+        },
+        {
+            "Feature": "Hari",
+            "Importance": 0.14964929223060608
+        },
+        {
+            "Feature": "Is_Akhir_Bulan",
+            "Importance": 0.10187471657991409
+        },
+        {
+            "Feature": "Is_Weekend",
+            "Importance": 0.07381255179643631
+        },
+        {
+            "Feature": "Hari_Minggu",
+            "Importance": 0.03393135964870453
+        },
+        {
+            "Feature": "Bulan",
+            "Importance": 0.012419379316270351
+        },
+        {
+            "Feature": "Persentase_Terlambat",
+            "Importance": 0.006661819759756327
+        },
+        {
+            "Feature": "Jumlah_Terlambat",
+            "Importance": 0.001902936608530581
+        },
+        {
+            "Feature": "Aktivitas_Bulan_Ini",
+            "Importance": 0.00044449136476032436
+        }
+    ]
+}
